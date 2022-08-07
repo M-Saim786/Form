@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No.4</title>
+    <style>
+        .img {
+            margin-left: 368px;
+            margin-top: 13px;
+            padding: 0px;
+            width: 668px;
+            height: 184px;
+        }
+
+        .h1 {
+            font-size: 45px;
+            text-align: center;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        }
+
+        #submit {
+            font-family: 'Lato';
+            border-radius: 50px;
+            margin-left: 530px;
+            border: 0px;
+            align-items: center;
+            background-color: royalblue;
+            font-size: 17px;
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            font-size: 24px;
+            width: 173px;
+            height: 57px;
+            display: block;
+            margin-top: -61px;
+            background-color: rgb(61, 61, 223);
+            text-align: center;
+        }
+
+        #submit:hover {
+            transition: 1s;
+            background-color: chartreuse;
+        }
+
+        #reset {
+            font-family: 'Lato';
+
+            font-size: 24px;
+            margin-right: 20px;
+            align-content: right;
+            background-color: chartreuse;
+            width: 173px;
+            height: 57px;
+            border-radius: 52px;
+            border: 0px;
+            margin-top: 22px;
+            display: inline-block
+        }
+
+        #reset:hover {
+            transition: 1.5s;
+            background-color: rgb(61, 61, 223);
+        }
+        .bg
+        {
+            opacity: 0.1;
+            position: absolute;
+            width: 1340px;
+            height: 200px;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <img src="https://saylaniwelfare.com/static/media/logo.22bf709605809177256c.png" class="img" alt="">
+    <h2 class="h1">Course Registration Form</h2>
+    <p style="text-align: center; font-size: 25px;   color: #666; font-family: Sans-serif;
+">Service - Education - Registration</p>
+    <form action="./Assignment 4 index.html" style="align-content: center;">
+        <fieldset style="width: 700px; display: block; background-color: rgb(197, 194, 194); margin: auto; ">
+            <table>
+                <tr rowspan="3">
+                    <center style="font-size: 35px; font-family: Sans-serif;">
+                        Student Registration Form
+                    </center>
+                </tr>
+            </table>
+            <table style="font-size: 20px; line-height: 50px; margin-left: 20px;">
+                <tr>
+                    <td>
+                        <label for="fname">Enter Your Name<sup style="color: red;">*</sup></label>
+                   <br>
+                    </td>
+                    <br>
+                    <td>
+                        <input type="text" name="" id="fname" placeholder="Enter your name" required size="30" style="margin-left: 100px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="faname">Enter Father Name<sup style="color: red;">*</sup></label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="faname" placeholder="Enter Father Name" required size="30" style="margin-left: 100px;">
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td><label for="cnic">CNIC <sup style="color: red;">*</sup></label></td>
+                    <td>
+
+                        <input type="number" name="" id="cnic" placeholder="CNIC" required style="margin-left: 100px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="add"> Enter your Address<sup style="color: red;">*</sup>
+                        </label>
+                    </td>
+                    <td>
+                        <textarea name="" id="add" cols="30" rows="5" placeholder="Address" required style="margin-left: 100px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender <sub style="color: red;">*</sub></td>
+                    <td >
+                        <label for="male"style="margin-left: 100px;">Male</label>
+                        <input type="radio" name="gender" id="male" >
+                        <label for="female">Female
+                        </label>
+                        <input type="radio" name="gender" id="female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Language
+                    </td>
+                    <td>
+                        <input type="checkbox" name="" id="urdu" style="margin-left: 100px;">
+                        <label for="urdu">Urdu</label>
+
+                        <input type="checkbox" name="" id="english">
+                        <label for="english">English</label>
+
+                        <input type="checkbox" name="" id="arabic">
+                        <label for="arabic">Arabic</label>
+
+                        <input type="checkbox" name="" id="Farsi">
+                        <label for="Farsi">Farsi</label>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        DOB:<sup style="color: red;">*</sup>
+                    </td>
+                    <td>
+                        <label for="date" style="margin-left: 100px;"></label>
+                        <input type="date" name="" id="date" size="10" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email ID:<sup style="color: red;">*</sup></label>
+                    </td>
+                    <td>
+
+                        <input type="text" name="" id="email" placeholder="Enter Email ID" size="30" required style="margin-left: 100px;">
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <label for="pass">Password<sup style="color: red;">*</sup></label>
+                    </td>
+                    <td>
+                        <input type="password" name="" id="pass" placeholder="Enter Password" size="30" required style="margin-left: 100px;">
+                    </td>
+                </tr> -->
+                <tr>
+                    <td>
+                        <label for="num">Mobile Number<sup style="color: red;">*</sup></label>
+                    </td>
+                    <td>
+                        <input type="number" name="" id="num" placeholder="+92322-000000 " required maxlength="12"
+                            required style="margin-left: 100px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        City<sup style="color: red;">*</sup></td>
+                    </td>
+                    <td>
+                        <select name="" id="city" required style="margin-left: 100px;">
+                            <option value="" disabled selected>Choose City</option>
+                            <option value="hyd">Hyderabad</option>
+                            <option value="kar">Karachi</option>
+                            <option value="lah">Lahore</option>
+                            <option value="mul">Multan</option>
+                                <option value="isl">Islamabad</option>
+                                
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Course
+                    </td>
+                    <td>
+                        <select name="" id="" style="margin-left: 100px;">
+                            <option value="" disabled selected>Courses</option>
+                            <option value="WMA">Web and Mobile App </option>
+                            <option value="CCNA">CCNA</option>
+                            <option value="Python">Python</option>
+                            <option value="CCO">CCO</option>
+                            <option value="GD">Graphic Designer</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hobbies
+                    </td>
+                    <td>
+                        <select name="" id="hobby" size="4" style="margin-left: 100px;">
+                            <option value="" disabled selected>Select Hobby</option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="Football">Football</option>
+                            <option value="Coding">Coding</option>
+                            <option value="Badminton">Badminton</option>
+                            <option value="Hockey">Hockey</option>
+                            <option value="Tennis">Tennis</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="last">Last Qualification</label></td>
+                    <td>
+                        <select name="" id="" size="" style="margin-left: 100px;" >
+                            <option value="" selected disabled>Last Qualification</option>
+                            <option value="metric">Metric</option>
+                            <option value="Inter">Intermediate</option>
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="masters">Masters</option>
+                            <option value="PHD">P.HD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Picture Upload:<sup style="color: red;">*</sup></label>
+                    </td>
+                    <td>
+                        <input type="file" name="" id="" accept=".jpg,.jpeg.png" required style="margin-left: 100px;">
+                    </td>
+                </tr>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="reset" name="" id="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+<input type="submit" name="" id="submit" value="Submit " >
+
+
+                        </td>
+                    </tr>
+
+                </table>
+
+            </table>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
